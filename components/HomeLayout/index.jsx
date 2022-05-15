@@ -3,7 +3,7 @@ import Link from "next/link";
 import logo from "../../public/favicon.png";
 import styles from "./index.module.scss";
 
-const DefaultLayout = ({ children }) => {
+const HomeLayout = ({ children }) => {
   return (
     <div className={styles.wrapper}>
       <nav className={styles.nav}>
@@ -22,4 +22,4 @@ const DefaultLayout = ({ children }) => {
   );
 };
 
-export default DefaultLayout;
+export default HomeLayout;
