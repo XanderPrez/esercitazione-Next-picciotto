@@ -26,10 +26,10 @@ const MessagesList = ({ reloadData, setReloadData }) => {
       {messagesList &&
         orderListByTime(messagesList).map((message) => (
           <div className={styles.wrapper__message} key={message.id}>
-            <h3>{message.text}</h3>
+            <h3 className={styles.wrapper__message__text}>{message.text}</h3>
             <Link href={`/messages/${message.id}`}>
               <a>
-                <p>{message.sender}</p>
+                <p className={styles.userName}>{message.sender}</p>
               </a>
             </Link>
             <p>{message.date}</p>

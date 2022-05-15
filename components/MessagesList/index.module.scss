@@ -21,7 +21,7 @@
       color: $grey;
     }
 
-    h3 {
+    &__text {
       font-size: 1.7rem;
     }
 
@@ -31,5 +31,10 @@
       right: 10px;
       cursor: pointer;
     }
+  }
+
+  .userName {
+    font-style: italic;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.35);
   }
 }
